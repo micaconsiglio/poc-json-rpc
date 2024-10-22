@@ -1,0 +1,58 @@
+### CREAR USUARIO
+POST http://localhost:8000/json-rpc
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": "1",
+  "method": "createUser",
+  "params": {
+    "dni": "111111",
+    "name": "Azul",
+    "surname": "Aguirre",
+    "email": "aa@gmail.com"
+  }
+}
+
+### BUSCAR USUARIO
+POST http://localhost:8000/json-rpc
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": "1",
+  "method": "getUser",
+  "params": {
+    "id": 1
+  }
+}
+
+### MODIFICAR USUARIO
+POST http://localhost:8000/json-rpc
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": "1",
+  "method": "updateUser",
+  "params": {
+    "id":1,
+    "dni": "111111",
+    "name": "Azul",
+    "surname": "Martinez",
+    "email": "am@gmail.com"
+  }
+}
+
+### ELIMINAR USUARIO
+POST http://localhost:8000/json-rpc
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": "1",
+  "method": "deleteUser",
+  "params": {
+    "id": 1
+  }
+}
