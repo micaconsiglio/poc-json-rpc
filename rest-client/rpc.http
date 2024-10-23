@@ -23,7 +23,7 @@ Content-Type: application/json
   "id": "1",
   "method": "getUser",
   "params": {
-    "id": 1
+    "id": 8
   }
 }
 
@@ -36,7 +36,7 @@ Content-Type: application/json
   "id": "1",
   "method": "updateUser",
   "params": {
-    "id":1,
+    "id": 1,
     "dni": "111111",
     "name": "Azul",
     "surname": "Martinez",
@@ -53,6 +53,6 @@ Content-Type: application/json
   "id": "1",
   "method": "deleteUser",
   "params": {
-    "id": 1
+    "id": 7
   }
 }
